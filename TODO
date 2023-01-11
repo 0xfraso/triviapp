@@ -1,0 +1,6 @@
+auth
+mostrare stat challenge nelle activity del risultato quiz e challenge info
+
+salvare su db se player1 o player2 hanno giocato e aggiornare risultato
+
+salvare partite single player (room/firebase) con adapter -> risultato quiz activity

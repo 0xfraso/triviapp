@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/app_bar_custom_quiz"
+        android:title="@string/custom_quiz"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:contentDescription="@string/custom_quiz"/>
+    <item
+        android:id="@+id/app_bar_logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:contentDescription="@string/logout"/>
+</menu>

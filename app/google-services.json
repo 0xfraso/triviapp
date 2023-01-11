@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "22473835138",
+    "project_id": "triviapp-8113b",
+    "storage_bucket": "triviapp-8113b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22473835138:android:4582645c9ffb72ddb4ea9b",
+        "android_client_info": {
+          "package_name": "com.fraso.triviapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22473835138-aamin1bh77j0ar1k8fap6e2q254lth19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmiTkQJWKSKUd0UOb2CjJp41aNBDeC0U0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22473835138-aamin1bh77j0ar1k8fap6e2q254lth19.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

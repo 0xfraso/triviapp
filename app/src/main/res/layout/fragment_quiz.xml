@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/text_view_curr_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:textSize="18sp"
+            android:textColor="@color/timer_color"
+            android:textAlignment="center"
+            android:drawablePadding="10dp"
+            app:drawableLeftCompat="@drawable/ic_baseline_timer_24"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loader_time_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/primary"
+        android:progressBackgroundTint="@color/dark_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1.00"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loader_time_progress">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.00">
+            <RadioGroup
+                android:id="@+id/radio_group_answers"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="20dp">
+
+                <RadioButton
+                    android:id="@+id/option_A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_radio_selector"
+                    android:padding="10dp"
+                    android:button="@null"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/option_B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_radio_selector"
+                    android:padding="10dp"
+                    android:button="@null"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/option_C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_radio_selector"
+                    android:padding="10dp"
+                    android:button="@null"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/option_D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_radio_selector"
+                    android:padding="10dp"
+                    android:button="@null"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="dark_200">#2e2e2e</color>
+    <color name="dark_500">#2a2a2a</color>
+    <color name="dark_700">#262626</color>
+    <color name="primary">#ff9479</color>
+    <color name="secondary">#83c3c4</color>
+    <color name="white">#ffffff</color>
+    <color name="timer_color">#ffb95d</color>
+</resources>

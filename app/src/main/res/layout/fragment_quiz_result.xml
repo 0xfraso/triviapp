@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="20dp"
+            android:layout_weight="1.00"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/quiz_result_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:text="Sfida completata!"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/quiz_result_label"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:text="Il tuo punteggio: "
+                />
+            <TextView
+                android:id="@+id/quiz_result_score"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/quiz_result_button_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/end"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

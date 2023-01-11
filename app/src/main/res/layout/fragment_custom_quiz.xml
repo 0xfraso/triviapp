@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    android:layout_margin="20dp"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1.00"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="@string/custom_quiz" />
+
+            <TextView
+                android:id="@+id/label_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:text="@string/categories" />
+
+            <ProgressBar
+                android:id="@+id/loader_categories"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/secondary"
+                android:visibility="visible" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/categories_chips"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/label_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:text="Difficoltà" />
+
+            <Spinner
+                android:id="@+id/spinner_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/dark_500"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/label_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:text="Numero di domande" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingVertical="10dp"
+                    android:textSize="20sp" />
+
+                <SeekBar
+                    android:id="@+id/request_limit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progressTint="@color/secondary"
+                    android:thumbTint="@color/white"
+                    android:max="20" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/label_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:text="Tempo in secondi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp" />
+
+                <SeekBar
+                    android:id="@+id/time_limit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progressTint="@color/secondary"
+                    android:thumbTint="@color/white"
+                    android:max="120" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/fragment_custom_quiz_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/button_primary"
+        android:text="@string/play"/>
+</LinearLayout>
